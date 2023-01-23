@@ -1,0 +1,21 @@
+version: "3"
+services:
+  db:
+    image: 'postgres:latest'
+    environment:
+      - POSTGRES_PASSWORD=LP;m=HHpKf4Gsq5d
+      - POSTGRES_agendamento=dmadmin
+      - POSTGRES_DB=usuarios
+    volumes:
+      - ./pgdata:/vat/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  app:
+    container_name: instrumento-ms
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    

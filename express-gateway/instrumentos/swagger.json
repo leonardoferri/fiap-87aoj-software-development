@@ -1,0 +1,23 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "CRUD",
+      "description": "Crud",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Instrumentos",
+        "description": "API for instrumentos in the system"
+      }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"]
+  }
